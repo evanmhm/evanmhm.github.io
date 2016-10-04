@@ -22,6 +22,7 @@ p {
     font-size: 16px;
     text-align: center;
 }
+
 canvas {
     z-index: 5;
 }
@@ -40,6 +41,36 @@ canvas {
 
 .full-height {
     height: 100vh;
+}
+
+.dots {
+    background-color: #bdc3c7;
+    background-image: radial-gradient(#95a5a6 7px, transparent 7px), radial-gradient(#7f8c8d 7px, transparent 7px), radial-gradient(#7f8c8d 7px, transparent 7px), radial-gradient(#95a5a6 7px, transparent 7px);
+    background-size: 100px 100px;
+    background-position: 2 0, 50px 0, 25px 50px, 3px 10px;
+    animation: dot-scramble 5s infinite linear;
+}
+
+.panel-text {
+    width: 60%;
+    left: 20%;
+}
+
+
+/*.dots:hover{
+  background-image: radial-gradient(#85c79f 7px, transparent 7px),
+                  radial-gradient(#fc536c 7px, transparent 7px),
+                  radial-gradient(#e99377 7px, transparent 7px),
+                  radial-gradient(#ebe49a 7px, transparent 7px);
+}*/
+
+@keyframes dot-scramble {
+    from {
+        background-position: 0 0, 50px 0, 25px 50px, 75px 50px;
+    }
+    to {
+        background-position: -100px -100px, -50px -100px, -75px -50px, -25px -50px;
+    }
 }
 
 .panel:after {
