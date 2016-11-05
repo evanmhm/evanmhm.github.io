@@ -38,8 +38,33 @@ canvas {
     background-color: #bdc3c7
 }
 
-.background {
+.no-background {
+    background-color: transparent;
+}
+
+body:before {
+    content: "";
+
+    position: fixed;
+
+    height: calc(100% + 30px);
+    width: calc(100% + 30px);
+
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    z-index: -1;
+
+    display: block;
     background-image: url("./../img/Background.jpg");
+    background-position: top;
+    background-size: cover;
+
+    filter: blur(3px);
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
 }
 
 .full-height {
@@ -69,7 +94,6 @@ canvas {
     width: 10em;
     height: 10em;
     border-radius: 100%;
-
 }
 
 
