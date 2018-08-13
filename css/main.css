@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700);
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url("normalize.css");
 @import url("grid.css");
 @import url("modal.css");
@@ -50,7 +50,7 @@ body,
 input,
 select,
 button {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 22px;
 	font-size: 1rem;
 	line-height: 1.36;
