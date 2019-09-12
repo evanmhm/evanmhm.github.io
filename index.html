@@ -14,15 +14,9 @@
 	<title>Evan Hopper-Moore</title>
 	<link rel=stylesheet href="css/main.css">
 	<link rel=stylesheet href="css/home.css">
-	<link rel=stylesheet href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
-	    crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-	    crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-	    crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-	    crossorigin="anonymous"></script>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 	<!--[if lte IE 8]>
 	<link rel=stylesheet href="css/ie.css">
 	<![endif]-->
@@ -50,12 +44,11 @@
 		<div class="contaier full-height main-content weight-300">
 			<h1 class="mb-25 sm-mb-20 heading scaled color-dark heading-bordered bordered-above">About Me</h1>
 			<p> My name is Evan Hopper-Moore, and I am a programmer, web designer, musician, and aspiring artist. This website serves
-				as a kind of online resume for me. <br> <br> I started coding in middle school for personal projects, making small games 
-				or little unhelpful tools. It wasn't until I joined the South Eugene Robotics Team that I really started to get
-				into coding. In freshman year of High School I learned Java and Python, while also working on solo projects in Unity
-				3D. Throughout High School I learned more and more about coding and I really enjoyed working on projects with other students and solving
-				coding challenges. <br> <br> I am currently a second year student at Oregon State University, majoring in Computer Science,
-				and thouroughly enjoying my studies. In my free time I enjoy playing music with friends, working on small graphic design
+				as a kind of online resume for me. <br> <br> I started coding in middle school for personal projects, making small games
+				or little apps. I was able to find more passion for coding when I joined the South Eugene Robotics Team. In freshman year of High School I learned Java and Python, while also working on solo projects in Unity
+				3D. Throughout High School I really enjoyed working on projects with other students and solving
+				coding challenges. <br> <br> I am currently a third year student at Oregon State University, majoring in Computer Science,
+				and thouroughly enjoying my studies. In my free time I enjoy recording music with friends, working on small graphic design
 				projects, and programmming generative and reactive visual art with Processing.
 
 			</p>
@@ -70,21 +63,41 @@
 					<h1 class="mb-25 sm-mb-20 heading scaled color-dark heading-bordered bordered-above">Skills</h1>
 				</div>
 			</div>
+			<!-- <div class="row">
+				<h5>Web Development</h5>
+				<ul>
+					<li>PHP</li>
+					<li>CSS and SCSS</li>
+					<li>Wordpress</li>
+					<li>JavaScript</li>
+					<li>Python</li>
+					<li>Django</li>
+					<li>Google Maps API</li>
+					<li>Google/Facebook/Twitter OAuth API</li>
+				</ul>
+			</div> -->
 			<div class="row no-gutters weight-300">
-				<div class="col">
-					<div class="my-card">
+				<div class="col-4">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-header">Web Development</h5>
+							<!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+							<p class="card-text">HTML5, CSS, JavaScript, PHP, Python, Django, Google Maps API, Google/Facebook/Twitter OAuth API, and Wordpress.</p>
+						</div>
+					</div>
+					<!-- <div class="my-card">
 						<h2 class="card-header">Web Development</h2>
 						<p class="smaller">HTML5, CSS, JavaScript, PHP, Python, Django, Google Maps API, Google/Facebook/Twitter OAuth API, and Wordpress.</p>
-					</div>
+					</div> -->
 				</div>
 
-				<div class="col">
+				<div class="col-4">
 					<div class="my-card">
 						<h2 class="card-header">Development tools</h2>
 						<p class="smaller">Java, Python, C++, C, Haskell, Assembly, Bash, vim, Windows 7/8/10, OS X/MacOS, and Unix</p>
 					</div>
 				</div>
-				<div class="col">
+				<div class="col-4">
 					<div class="my-card">
 						<h2 class="card-header">Backend Development</h2>
 						<p class="smaller">Javascript, Django, PHP, MySQL, SQLite, and Amazon Web Services (EC2 hosting and RDS database hosting)
@@ -96,20 +109,20 @@
 			</div>
 
 			<div class="row xs-mb-25 weight-300">
-				<div class="col">
+				<div class="col-4">
 					<div class="my-card">
 						<h2 class="card-header">Graphic Design</h2>
 						<p class="smaller">Adobe Illustrator, Adobe Photoshop, GIMP, Processing, Blender, Unity 3D/2D</p>
 					</div>
 				</div>
 
-				<div class="col">
+				<div class="col-4">
 					<div class="my-card">
 						<h2 class="card-header">Music produciton</h2>
 						<p class="smaller">Ableton 9 and 10, Logic Pro X</p>
 					</div>
 				</div>
-				<div class="col">
+				<div class="col-4">
 					<div class="my-card">
 						<h2 class="card-header">Operating Systems</h2>
 						<p class="smaller">Comfortable with Windows 7/8/10, OS X/MacOS, Linux, Raspbian, Bash, Command Prompt</p>
@@ -127,14 +140,14 @@
 			<h1 class="mb-25 sm-mb-20 heading scaled color-dark heading-bordered bordered-above">Work/Activity History</h1>
 			<br>
 			<h4 style="text-align:center;text-transform: none;">Palo Alto Software Web Developer Intern</h4>
-			<h6 style="text-align:center;">(June 2018 - September 208)</h6>
-			<p> During the summer of 2018 I worked as an intern on the web dev team at <a href="https://www.paloalto.com/" target="_blank">Palo Alto Software</a> in Eugene. 
-				I spent the summer working with PHP, HTML, Sass, JavaScript, and MySQL solving issues using the JIRA and Scrum workflow along with Git. This was a great learning
+			<h6 style="text-align:center;">(Summer 2018 & 2019)</h6>
+			<p> During the summers of 2018 and 2019 I worked as an intern on the web dev team at <a href="https://www.paloalto.com/" target="_blank">Palo Alto Software</a> in Eugene.
+				I spent the summers working with PHP, Wordpress, Sass, JavaScript, and MySQL solving issues using the JIRA and Scrum workflow along with Git. This was a great learning
 				opportunity for me and I really enjoyed my time working there. </p>
 			<br>
 			<br>
 			<h4 style="text-align:center;text-transform: none;">ShoeBio Core Developer</h4>
-			<h6 style="text-align:center;">(January 2018 - June 208)</h6>
+			<h6 style="text-align:center;">(January 2018 - June 2018)</h6>
 			<p> While going to school at OSU, I was working as a core developer for <a href="http://www.shoebio.com" target="_blank">ShoeBio.com</a> which
 				is a project created by two business students at Oregon State University. ShoeBio helps users find the best prices on
 				shoes in the market by combining prices from over 300 sites and for hundreds of thousands of shoes. I was working with
@@ -149,7 +162,7 @@
 				create bike routes that trigger these lights in junction with the phone app. </p>
 			<br>
 			<br>
-			<h4 style="text-align:center;text-transform: none;">McDonald’s Crew Member</h4>
+			<!-- <h4 style="text-align:center;text-transform: none;">McDonald’s Crew Member</h4>
 			<h6 style="text-align:center;">(July 2015 - June 2018)</h6>
 			<p> I worked part time as a McDonald's crew member after school and during breaks in multiple positions including
 				training, grill, food preparation, and service.</p>
@@ -158,7 +171,7 @@
 			<h4 style="text-align:center;text-transform: none;">Eagle Scout Rank in Boy Scouts of America</h4>
 			<h6 style="text-align:center;">(March 2015)</h6>
 			<p> Earned Eagle Scout rank in 2015 and held multiple roles of leadership. Throught my 8 years of Boy Scout experience I worked
-				with teams and learned many new nature skills.</p>
+				with teams and learned many new nature skills.</p> -->
 		</div>
 	</div>
 
@@ -207,15 +220,6 @@
 		</p>
 	</div>
 
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script>
-	window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')
-	</script>
-
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/dropdown.js"></script>
-	<!-- //-end- concat_js -->
 </body>
 
 </html>
