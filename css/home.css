@@ -16,6 +16,10 @@
     color: #fff;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .content-section {
     /* min-height: 100%; */
     padding: 5% 20% 5% 20%;
