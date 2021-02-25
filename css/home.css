@@ -40,7 +40,6 @@ html, body {
 }
 
 .cover .cover-text {
-    color: #000;
     padding-top: 20px;
 }
 
@@ -54,7 +53,7 @@ html, body {
 
 .cover-right {
     float: left;
-    margin-left: 130px;
+    margin-left: 140px;
 }
 
 .profile-img {
@@ -66,9 +65,9 @@ html, body {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .backdrop-blur {
@@ -78,15 +77,76 @@ html, body {
     width: max-content;
     overflow: hidden;
     position: relative;
+    color: #000;
+    margin: 0 auto;
 }
 
 @supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
     .backdrop-blur {
-        background-color: rgba(255, 255, 255, .4);
+        background-color: rgba(0, 0, 0, .4);
         -webkit-backdrop-filter: blur(2em);
         backdrop-filter: blur(4px);
+        color: #fff;
     }
 }
+
+@media (max-width: 768px) {
+    .profile-img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .cover-right {
+        margin-left: 105px;
+    }
+
+    .backdrop-blur {
+        padding: 15px;
+    }
+
+    .cover-text h1 {
+        font-size: 2.2em;
+        padding: 5px 0;
+    }
+
+    .cover-text h3 {
+        font-size: 1.5em;
+        padding:
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-img {
+        position: relative;
+        margin: 0 auto;
+        -ms-transform: none;
+        transform: none;
+    }
+
+    .cover-right {
+        margin-left: 0;
+        float: none
+    }
+    .cover-left {
+        float: none;
+    }
+
+    .backdrop-blur {
+        padding: 15px;
+    }
+
+    .cover-text h1 {
+        font-size: 1.7em;
+        padding: 0;
+    }
+
+    .cover-text h3 {
+        font-size: 1.0em;
+        padding:
+    }
+}
+
+
 
 .cover .heading, .cover .subheading {
     color: #ffde7d;
