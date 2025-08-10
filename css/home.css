@@ -26,7 +26,7 @@ html, body {
 }
 
 .cover {
-    background-image: url("./../img/bg.jpg");
+    background-image: url("./../img/bg.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -167,11 +167,11 @@ html, body {
 }
 
 #banner-1 {
-    background-image: url("./../img/banner1.jpg");
+    background-image: url("./../img/banner1.webp");
 }
 
 #banner-2 {
-    background-image: url("./../img/banner2.jpg");
+    background-image: url("./../img/banner2.webp");
 }
 
 #links-section {
