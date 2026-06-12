@@ -10,7 +10,7 @@
 body {
     font-family: 'Inter', sans-serif;
     font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "system-ui", sans-serif;
-    background: #f7e4cd;
+    background: rgb(36, 49, 46);
 }
 
 a:not(.btn) {
