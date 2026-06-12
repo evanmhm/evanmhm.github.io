@@ -43,12 +43,14 @@ a.btn:hover {
     position: relative;
     width: 100%;
     height: 90vh;
+    height: 90svh;
     flex-direction: column;
     gap: 48px;
     align-items: center;
     justify-content: center;
     padding-bottom: 5vh;
-    background: url("../img/banner5.jpg");
+    padding-bottom: 5svh;
+    background: url("../img/gradients/backup1.jpg");
     background-size: cover;
     background-position: top;
 }
@@ -223,12 +225,12 @@ div.underlayer.glass:before {
 }
 
 .navbar#section1 {
-    background: url("../img/gamedev/gameScreen.jpg");
+    background: url("../img/headerbanner.jpg");
     background-size: cover;
     image-rendering: -moz-crisp-edges;
     image-rendering: -webkit-crisp-edges;
     image-rendering: pixelated;
-    background-position: center;
+    background-position-y: 13%;
     z-index: 0;
 }
 
@@ -259,7 +261,11 @@ div.underlayer.glass:before {
 .section-body {
     width: 100%;
     position: relative;
-    padding: 64px 0;
+    padding: 64px 32px;
+}
+
+.section-body:last-child {
+    padding-bottom: 128px;
 }
 
 .section-body .section-bg {
@@ -367,6 +373,11 @@ div.underlayer.glass:before {
     width: 100%;
     margin: 48px 0;
     text-align: center;
+    line-height: 1.2;
+}
+
+.description:last-child {
+    margin-bottom: 0;
 }
 
 iframe {
