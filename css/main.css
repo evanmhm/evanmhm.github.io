@@ -1,0 +1,523 @@
+/* hello :) all handwritten, no AI used. ~ Evan */
+:root {
+    --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    --shadow-2: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    --shadow-3: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    --shadow-4: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    --shadow-5: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "system-ui", sans-serif;
+    background: #f7e4cd;
+}
+
+a:not(.btn) {
+    color: #8CBC40;
+}
+
+a.btn {
+    color: #ffffffcc;
+    padding: 12px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    /* border: 1px solid rgba(255, 255, 255, 0.26); */
+    box-shadow: var(--shadow-2);
+    transition: all .25s ease-in-out;
+}
+
+a.btn:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: var(--shadow-3);
+}
+
+/*---------------------------------*/
+/*           Hero Section          */
+/*---------------------------------*/
+.hero {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5vh;
+    background: url("../img/banner5.jpg");
+    background-size: cover;
+    background-position: top;
+}
+
+.test {
+    background: url("../img/rule313.png");
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 0;
+    filter: invert;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    z-index: 0;
+    filter: opacity(0.2) invert(1);
+}
+
+.video-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0
+}
+
+.video-bg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/*---------------------------------*/
+/*          Business Card          */
+/*---------------------------------*/
+div.business-card-container {
+    position: relative;
+    margin: 0 32px 48px 32px;
+}
+
+div.business-card {
+    display: flex;
+    min-height: fit-content;
+    min-width: fit-content;
+    gap: 64px;
+    padding: 64px;
+    flex-direction: row;
+    background: rgba(217, 217, 217, 0.2);
+    border-radius: 96px;
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    z-index: 10;
+}
+
+.business-card .icon {
+    height: 250px;
+    width: 250px;
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.icon img {
+    max-height: 100%;
+}
+
+.business-card .right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 64px;
+    color: white;
+    font-weight: bolder;
+    text-shadow: var(--shadow-2);
+}
+
+h3 {
+    font-size: 36px;
+    color: #ffffffcc;
+    font-weight: bold;
+    margin-top: 8px;
+    text-shadow: var(--shadow-1);
+}
+
+h4 {
+    font-size: 30px;
+    color: #ffffffaa;
+    font-weight: bold;
+    margin-top: 8px;
+    text-shadow: var(--shadow-1);
+}
+
+.links {
+    display: flex;
+    gap: 32px;
+}
+
+.links a.btn {
+    font-size: 0;
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 24px;
+}
+
+.links a.btn .icon-container {
+    --size: 40px;
+    font-size: var(--size);
+    width: var(--size);
+    height: var(--size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.under {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: auto;
+}
+
+div.underlayer {
+    background: rgba(217, 217, 217, 0.2);
+    border-radius: 0 0 96px 96px;
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    z-index: 9;
+    height: 48px;
+    top: -24px;
+    margin: 0 auto;
+    box-shadow: var(--shadow-2);
+    clip-path: polygon(0% 50%, 200% 50%, 200% 200%, 0% 200%);
+}
+
+div.underlayer.glass:before {
+    padding-top: 0;
+}
+
+#underlayer1 {
+    width: calc(100% - 176px);
+}
+
+#underlayer2 {
+    width: calc(100% - 254px);
+    z-index: 8;
+    top: -48px;
+}
+
+
+/*---------------------------------*/
+/*        Animated Hero Text       */
+/*---------------------------------*/
+.hero-text-container {
+    display: block;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    z-index: 10;
+}
+
+/*---------------------------------*/
+/*         Section Headers         */
+/*---------------------------------*/
+.navbar {
+    position: relative;
+    padding: 128px 64px 128px;
+}
+
+.navbar#section1 {
+    background: url("../img/gamedev/gameScreen.jpg");
+    background-size: cover;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    background-position: center;
+    z-index: 0;
+}
+
+.navbar h2 {
+    font-size: 48px;
+    color: white;
+    font-weight: bolder;
+    text-shadow: var(--shadow-2);
+    z-index: 10;
+    position: relative;
+    text-align: center;
+}
+
+.blur-gradient-overlay {
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 25%, rgba(0,0,0,1) 90%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 25%, rgba(0,0,0,1) 90%);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+/*---------------------------------*/
+/*             Sections            */
+/*---------------------------------*/
+.section-body {
+    width: 100%;
+    position: relative;
+    padding: 64px 0;
+}
+
+.section-body .section-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-card {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 64px;
+    background: rgba(217, 217, 217, 0.15);
+    border-radius: 96px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 10;
+}
+
+.section-card-header h3 {
+    font-size: 64px;
+    color: white;
+    font-weight: bolder;
+    text-shadow: var(--shadow-2);
+    z-index: 10;
+    position: relative;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    gap: 48px;
+}
+/*
+.flex-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+} */
+
+.img-square {
+    max-width: 600px;
+    max-height: 600px;
+    font-size: 0;
+}
+
+.img-rect {
+    max-width: 600px;
+    max-height: 300px;
+    font-size: 0;
+}
+
+.video-container {
+    height: 300px;
+    font-size: 0;
+    position: relative;
+    flex: 1;
+}
+
+.video-container.square {
+    height: 412px;
+}
+
+.video-container.tiktok {
+    height: 460px;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-rounded {
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.img-rounded img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caption {
+    font-size: 16px;
+    color: #aaa;
+    font-style: italic;
+    padding-left: 32px;
+    padding-top: 8px;
+}
+
+.description {
+    font-size: 28px;
+    color: white;
+}
+
+.description.center {
+    width: 100%;
+    margin: 48px 0;
+    text-align: center;
+}
+
+iframe {
+    margin-top: 48px;
+}
+
+.split {
+    display: flex;
+    gap: 32px;
+}
+
+.flex1 { flex: 1; }
+.flex2 { flex: 2; }
+.textright { text-alight: right; }
+
+.split img {
+    width: 100%;
+}
+
+.split + .split {
+    margin-top: 32px;
+}
+
+.views-banner {
+    position: absolute;
+    background: white;
+    padding: 3px 38px;
+    bottom: 38px;
+    right: -47px;
+    font-size: 16px;
+    transform: rotate(-45deg);
+}
+
+/*---------------------------------*/
+/*           Box Shadows           */
+/*---------------------------------*/
+.card-1 {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+/* .card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+} */
+
+.card-2 {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card-3 {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card-4 {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card-5 {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+
+/*---------------------------------*/
+/*            Responsive           */
+/*---------------------------------*/
+
+/* Tablets and smaller screens */
+@media screen and (max-width: 1111px) {
+    .business-card {
+        gap: 32px;
+    }
+
+    .business-card .icon {
+        height: 200px;
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    .links a.btn {
+        padding: 14px;
+    }
+
+}
+
+/* Mobile screens */
+@media screen and (max-width: 768px) {
+
+}
+
+/*---------------------------------*/
+/*          Glass Border          */
+/* https://codepen.io/itsjavi/pen/gONQwMw */
+/*---------------------------------*/
+@property --c1 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #ddddddaa;
+}
+
+@property --c2 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #55555588;
+}
+
+@property --c3 {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #33333377;
+}
+
+.glass {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(3px);
+}
+
+.glass:before {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    inset: 0px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(to bottom right,
+            var(--c1) 0%,
+            var(--c3) 33%,
+            var(--c2) 62%,
+            var(--c3) 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    transition: --c1 300ms ease, --c2 300ms ease, --c3 300ms ease;
+}
+
+.glass:not(.nohover):hover:before {
+    --c1: #52525288;
+    --c2: #878787aa;
+    --c3: #41414177;
+}
+
+.glass:not(.nohover):active:before {
+    --c1: #525252aa;
+    --c2: #41414177;
+    --c3: #41414177;
+}
