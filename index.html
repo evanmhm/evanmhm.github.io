@@ -6,296 +6,249 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="description" content="Evan Hopper-Moore's Resume Website">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Evan Hopper-Moore's Portfolio">
 
 	<title>Evan Hopper-Moore</title>
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel=stylesheet href="css/home.css">
 
-	<!--[if lte IE 8]>
-	<link rel=stylesheet href="css/ie.css">
-	<![endif]-->
+    <!-- CDNs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
+
+    <link rel=stylesheet href="./css/reset.css">
+    <link rel=stylesheet href="./css/main.css">
 </head>
 
 <body>
-	<div class="cover">
-		<div class="container full-height">
-			<div class="cover-text full-height">
-				<div class="v-align-parent">
-					<div class="v-center">
-						<div class="backdrop-blur">
-							<div class="cover-left">
-								<div class="profile-img"></div>
-							</div>
-							<div class="cover-right">
-								<h1>Evan Hopper-Moore</h1>
-								<h3>Programmer - Web Dev - Musician</h3>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelector('.video-bg video').playbackRate = 0.75;
+        });
+    </script>
+    <div class=""></div>
+    <div class="hero">
+        <div class="business-card-container">
+            <div class="business-card card-3 glass">
+                <div class="icon card-2 glass nohover">
+                    <img src="./img/profile.jpeg" alt="Headshot" title="Evan Hopper-Moore">
+                </div>
+                <div class="right-side">
+                    <div class="info">
+                        <h1>Evan Hopper-Moore</h1>
+                        <h3>Developer &middot; Designer &middot; Artist</h3>
+                        <h4>Eugene, OR</h4>
+                    </div>
+                    <div class="links">
+                        <a class="btn glass" href="#" title="Email evanhoppermoore@gmail.com">
+                            <div class="icon-container">
+                                <i class="fa-solid fa-at"></i>
+                            </div>
+                        </a>
+                        <a class="btn glass" href="#" title="LinkedIn">
+                            <div class="icon-container">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                        </a>
+                        <a class="btn glass" href="#" title="Github">
+                            <div class="icon-container">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="under">
+                <div class="underlayer glass nohover" id="underlayer1"></div>
+                <div class="underlayer glass nohover" id="underlayer2"></div>
+            </div>
+        </div>
+        <!-- serpinski -->
+        <!-- <div class="test">
 
-	<div class="content-section">
-		<div class="topper"></div>
-		<div class="contaier full-height main-content weight-300">
-			<h1 class="heading">About Me</h1>
-			<p> My name is Evan Hopper-Moore, and I am a programmer, web developer, and musician.<br> <br> I first started coding in middle school by making small games
-				and apps in C++, and I fell in love with solving the puzzles of programming. In high school found more passion for coding when I joined the South Eugene Robotics Team.
-				There I worked with Java and Python, helping write code for the robots and teaching classes to younger members. In this time I experimented with Unity and game development as well.
-				These interests lead me to persue a degree in Compter Science at OSU.
-				<br> <br> In March of 2021 I graduated from Oregon State University with a BOS in Computer Science. At OSU I had the opportunity to take classses ranging all facets of Computer Science, including full stack web development, AI and machine learning, and many different languanges.
-				In my free time, I enjoy recording and producing music with friends, painting, photography, game development, and programming generative visual art.
-			</p>
-			<div style="
-				    display:none;
-			    height: 90px;
-			    background: #d73f09;
-			    position: relative;
-			    width: 332px;
-			    border-radius: 10px;
-			    margin: 0 auto;
-			    box-shadow: 4px 4px 8px #00000077;">
+        </div> -->
+        <div class="video-bg">
+            <video autoplay loop muted>
+                <source src="./video/bg2.webm" type="video/webm" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <!-- <div class="hero-text-container">
+            <div class="hero-text">
+                DESIGNER
+            </div>
+        </div> -->
+        <!-- <p class="caption">Projection work and algorithmic visuals by me</p> -->
 
-				<img src="https://communications.oregonstate.edu/sites/communications.oregonstate.edu/files/crest.png" style="
-				    height: 75px;
-				    position: absolute;
-				    top: 10px;
-				    left: 10px;">
+    </div>
 
-				<h3 style="
-				    font-size: 21px;
-				    text-align: right;
-				    padding-right: 8px;
-				    color: #fff;
-				    margin-bottom: 0;"> Oregon State University </h3>
+    <div class="navbar" id="section1">
+        <div class="blur-gradient-overlay"></div>
+        <h2>Selected Works</h2>
+    </div>
 
-				<div style="text-align: right;">
-					 <h3 style="font-size: 12px;display: inline;"> Bachelors in Science - </h3>
-					 <h3 style="
-					    font-size: 15px;
-					    text-align: right;
-					    padding-right: 8px;
-					    color: #fff;
-					    display: inline;"> Computer Science </h3>
-				</div>
-				<div style="text-align: right;">
-					<h3 style="
-					    font-size: 15px;
-					    text-align: right;
-					    padding-right: 8px;
-					    color: #fff;
-					    display: inline;"> Graduated March 2021 </h3>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="section-body">
+        <img class="section-bg" src="./img/gradients/overanalyzed.png" alt=""/>
+        <div class="section-card glass nohover">
+            <div class="section-card-header">
+                <h3>over<span style="color:#8CBC40">(</span>analyzed<span style="color:#8CBC40">)</span></h3>
+            </div>
+            <div class="section-card-body">
+                <div class="flex-center">
+                    <div class="img-container">
+                        <div class="img-square img-rounded glass card-2">
+                            <img src="./img/music/overanalyzed.png" alt=""/>
+                        </div>
+                        <p class="caption">Album artwork, designed by me</p>
+                    </div>
+                </div>
+                <p class="description center">
+                    over(analyzed) is the second album I released as part of my solo music project. It focuses on themes of love, loss, and overanlyzing the natural parts of myself to create art.
+                </p>
+                <div class="flex-center">
+                    <div class="img-container">
+                        <div class="img-square img-rounded glass card-2">
+                            <img src="./img/music/GetYourLight.png" alt=""/>
+                        </div>
+                        <p class="caption">Artwork for first single Get Your Light, designed by me</p>
+                    </div>
 
-	<div class="banner" id="banner-1"></div>
+                    <div class="img-container">
+                        <div class="img-square img-rounded glass card-2">
+                            <img src="./img/music/StrangleMe.png" alt=""/>
+                        </div>
+                        <p class="caption">Artwork for second single Strangle Me, designed by me</p>
+                    </div>
 
-	<div class="content-section" id="skills">
-		<div class="topper"></div>
-		<div class="container">
-			<div class="row text-center">
-				<h1 class="heading">Skills</h1>
-			</div>
-			<div class="row no-gutters" id="skill-cards">
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="card">
-						<div class="card-body">
-							<h5 class="card-header">Languages</h5>
-							<p class="card-text">
-								<ul>
-									<li>Python</li>
-									<li>Java</li>
-									<li>C, C++, C#</li>
-									<li>PHP</li>
-									<li>Javascript</li>
-									<li>CSS and SCSS</li>
-									<li>Processing</li>
-									<li>OpenGL and GLSL</li>
-								</ul>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="card">
-						<div class="card-body">
-							<h2 class="card-header">Development tools</h2>
-							<p class="card-text">
-								<ul>
-									<li>Git and Github</li>
-									<li>SVN</li>
-									<li>OAuth APIs</li>
-									<li>Google API</li>
-									<li>Bash</li>
-									<li>Command Prompt</li>
-									<li>Android Studio</li>
-									<li>Visual Studio</li>
-								</ul>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="card">
-						<div class="card-body">
-							<h2 class="card-header">Web Development</h2>
-							<p class="card-text">
-								<ul>
-									<li>MySQl, SQLite</li>
-									<li>Django</li>
-									<li>Node.js</li>
-									<li>Amazon Web Services (EC2, RDS, S3)</li>
-									<li>Bootstrap</li>
-									<li>HTML and PHP</li>
-									<li>Drupal</li>
-								</ul>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="card">
-						<div class="card-body">
-							<h2 class="card-header">Operating Systems</h2>
-							<p class="card-text">
-								<ul>
-									<li>Windows</li>
-									<li>MacOS</li>
-									<li>Ubuntu</li>
-									<li>Ubuntu Server</li>
-									<li>Raspbian</li>
-								</ul>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="card">
-						<div class="card-body">
-							<h2 class="card-header">Other</h2>
-							<p class="card-text">
-								<ul>
-									<li>Agile and Scrum Workflows</li>
-									<li>JIRA</li>
-									<li>PC Building</li>
-									<li>Effective Communicator with clients and peers</li>
-								</ul>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="card">
-						<div class="card-body">
-							<h2 class="card-header">Hobbies</h2>
-							<p class="card-text">
-								<ul>
-									<li>Music Production (Ableton)</li>
-									<li>3D Modeling (Blender)</li>
-									<li>Game Dev (Unity)</li>
-									<li>Film Photography</li>
-									<li>Poetry</li>
-								</ul>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                </div>
+                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/4qZ6DsAwCmU4NZv1Q5L7I3?utm_source=generator" width="100%" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
 
-	<div class="banner" id="banner-2"></div>
+    <div class="section-body">
+        <img class="section-bg" src="./img/gradients/bloodnoise.png" alt=""/>
+        <div class="section-card glass nohover">
+            <div class="section-card-header">
+                <h3><span style="color:#9F0000">blood</span>noise</h3>
+            </div>
+            <div class="section-card-body">
+                <div class="flex-center">
+                    <div class="img-container">
+                        <div class="img-rect img-rounded glass card-2">
+                            <img src="./img/gamedev/pianoScreen.png" alt=""/>
+                        </div>
+                        <p class="caption">Ingame screenshot</p>
+                    </div>
+                </div>
+                <div class="flex-center">
+                    <div class="img-container">
+                        <div class="img-rect img-rounded glass card-2">
+                            <img src="./img/gamedev/bell_loop.gif" alt=""/>
+                        </div>
+                        <p class="caption">Church modeled and textured by me</p>
+                    </div>
 
-	<div class="content-section level">
-		<div class="contaier full-height main-content weight-300">
-			<h1 class="mb-25 sm-mb-20 heading scaled color-dark heading-bordered bordered-above">Work/Activity History</h1>
-			<br>
-			<h4 style="text-align:center;text-transform: none;">Front End Developer, Net Assets</h4>
-			<h6 style="text-align:center;">March 2022 - Ongoing </h6>
-			<p> <a href="https://netassets.com/" target="_blank">Net Assets</a> creates web applications for cities to digitize their paper-based processes for handling properties and businesses.
-				As the front end developer in our small team at Net Assets, I style and implement new features, fix issues, and reorganize pages to be cleaner and more responsive.
-				Additionally, I refactored the front end code base to be accessible, readable, and reusable.
-			</p>
-			<br>
-			<br>
-			<h4 style="text-align:center;text-transform: none;">Test Technician, Novus Labs</h4>
-			<h6 style="text-align:center;">April 2021 - April 2022 </h6>
-			<p> At <a href="https://www.novuslabs.com/" target="_blank">Novus Labs</a> I performed tests of all kinds for different clients who contract technicians from Novus. Using Jira, command line tools, and Office 365 products,
-				I provided testing support for multiple projects with multiple teams, adapting quickly to each environment as needed. Using Novus' device inventory, I have gained experience with all types of phones, routers, and other smart devices.
-			</p>
-			<br>
-			<br>
-			<h4 style="text-align:center;text-transform: none;">Front-End Web Developer, Impact Studio</h4>
-			<h6 style="text-align:center;">January 2021 - June 2022 </h6>
-			<p> <a href="https://impactstudio.oregonstate.edu/" target="_blank">Impact Studio</a> is a part of Oregon State University aimed at introducing new ideas and initiatives for the school.
-				I was contracted to perform a webiste redesign, giving their main pages a fresh look while still keeping inside OSU style guidlines.
-			</p>
-			<br>
-			<br>
-			<h4 style="text-align:center;text-transform: none;">Palo Alto Software Web Developer Intern</h4>
-			<h6 style="text-align:center;">Summer 2018 & 2019</h6>
-			<p> During the summers of 2018 and 2019 I worked as an intern on the web development team at <a href="https://www.paloalto.com/" target="_blank">Palo Alto Software</a> in Eugene.
-				I spent the summers working with PHP, Wordpress, Sass, JavaScript, and MySQL, solving issues using JIRA, the Scrum agile framework, and GitHub. In my second summer I helped implement
-				multiple components as part of their main website's redesign.</p>
-			<br>
-			<br>
-			<h4 style="text-align:center;text-transform: none;">ShoeBio Software Developer</h4>
-			<h6 style="text-align:center;">January 2018 - June 2018</h6>
-			<p> While going to school at OSU, I was working as a software developer for ShoeBio which
-				is a project created by two business students at Oregon State University. ShoeBio helps users find the best prices on
-				shoes in the market by combining prices from over 300 sites and for hundreds of thousands of shoes. I was working with
-				a partener to develop a web scraper that provides the backend data. Our prototype was able to obtain data from around 100 vendors. </p>
-			<br>
-			<br>
-			<h4 style="text-align:center;text-transform: none;">University of Oregon Computer Science Research</h4>
-			<h6 style="text-align:center;">June 2017 - September 2017</h6>
-			<p> I interned as a full stack web developer for a CS research project called FastTraq. FastTraq’s goal is to let bikers
-				in Eugene trigger timed traffic lights using bluetooth. I created the frontend, backend, and database for the
-				website which serves as a tool for users to create bike routes that trigger these lights in junction with the phone app. </p>
-			<br>
-			<br>
-		</div>
-	</div>
+                    <div class="img-container">
+                        <div class="img-rect img-rounded glass card-2">
+                            <img src="./img/gamedev/sun_loop.gif" alt=""/>
+                        </div>
+                        <p class="caption">Modeled and textured by me</p>
+                    </div>
+                </div>
 
-	<div class="container text-center" id="links-section">
-		<div style="weight:100%;">
-				<h1 class="heading">Links</h1>
-			<div id="links">
-				<a href="https://github.com/evanmhm" title="Github" target="_blank">
-					<span class="fa-stack fa-lg social-icon">
-						<i class="fa fa-circle fa-stack-2x"></i>
-						<i class="fa fa-github-alt fa-stack-1x fa-inverse"></i>
-					</span>
-				</a>
-				<a href="mailto:evanhoppermoore@gmail.com" title="Email" target="_blank">
-					<span class="fa-stack fa-lg social-icon">
-						<i class="fa fa-circle fa-stack-2x"></i>
-						<i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-					</span>
-				</a>
-				<a href="https://www.linkedin.com/in/evanmhm/" title="Linkedin" target="_blank">
-					<span class="fa-stack fa-lg social-icon">
-						<i class="fa fa-circle fa-stack-2x"></i>
-						<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-					</span>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="footer text-center">
-		<p>
-			Evan Hopper-Moore • <a href="mailto:evanhoppermoore@gmail.com">evanhoppermoore@gmail.com</a>
-		</p>
-	</div>
+                <p class="description center">
+                    bloodnoise is a game I made with my partner for the <a href="https://itch.io/jam/noise-jam-3">NOISE JAM 3</a> game jam. It is playable <a href="#">here!</a> Made in the Godot engine over the course of about 3 weeks, the game employs shaders to scan the environment using sounds. All code, assets, and music were made wihtout AI.
+                </p>
+
+                <!-- <div class="flex-center">
+                    <div class="video-container img-rounded glass card-2">
+                        <video autoplay loop muted>
+                            <source src="./video/goop4.webm" type="video/webm" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="section-body">
+        <img class="section-bg" src="./img/gradients/touchdesigner.png" alt=""/>
+        <div class="section-card glass nohover">
+            <div class="section-card-header">
+                <h3>touch<span style="color:#6B774D">designer</span></h3>
+            </div>
+            <div class="section-card-body">
+                <div class="flex-center">
+                    <div class="video-container img-rounded tiktok glass card-2">
+                        <div class="views-banner">
+                            1 million views+
+                        </div>
+                        <video autoplay loop muted>
+                            <source src="./video/birds.mp4" type="video/webm" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-container img-rounded tiktok glass card-2">
+                        <video autoplay loop muted>
+                            <source src="./video/crane.webm" type="video/webm" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-container img-rounded tiktok glass card-2">
+                        <video autoplay loop muted>
+                            <source src="./video/train.webm" type="video/webm" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div class="flex-center">
+                    <div class="video-container img-rounded square glass card-2">
+                        <video autoplay loop muted>
+                            <source src="./video/target.webm" type="video/webm" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-container img-rounded square glass card-2">
+                        <video autoplay loop muted>
+                            <source src="./video/goop4.webm" type="video/webm" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <p class="description center">
+                    I create algorithmic art with TouchDesigner for projection mapping, online promotional material, and interactive experiences.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- <div class="split">
+        <div class="flex1">
+            <img src="./img/profile.jpeg" alt="">
+        </div>
+        <div class="flex2">
+            <p>
+
+            </p>
+        </div>
+    </div>
+    <div class="split">
+        <div class="flex2">
+            <p>
+                My name is Evan Hopper-Moore, and I am a programmer, web developer, and musician.<br> <br> I first started coding in middle school by making small games
+                and apps in C++, and I fell in love with solving the puzzles of programming. In high school found more passion for coding when I joined the South Eugene Robotics Team.
+            </p>
+        </div>
+        <div class="flex1">
+            <img src="./img/profile.jpeg" alt="">
+        </div>
+    </div> -->
 
 </body>
 
